@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Productivity Dashboard</h1>
+
+        <p class="subtitle">
+            !Управляй своими задачами!
+        </p>
+
+        <p id="taskCounter">
+            Всего задач: 0
+        </p>
+
+        <div class="input-group">
+            <input
+              id="taskInput"
+              type="text"
+              placeholder="Введи новую задачу">
+
+            <button id="addButton">
+    Добавить
+</button>
+            <button id="clearButton">
+                Очистить всё
+            </button>
+        </div>
+        <div class="tasks">
+            <div class="tasks" id="taskList"></div>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

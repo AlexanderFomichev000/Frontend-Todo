@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.container {
+    width: 600px;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: gray;
+    margin-bottom: 30px;
+}
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input {
+    flex:1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    background: #4f46e5;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background:#4338ca;
+}
+
+.task {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+}
+
+.task span {
+    flex: 1;
+}
+
+.delete-btn {
+    background: rgb(168, 45, 45);
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: rgb(0, 0, 0);
+    opacity: 0.7;
+}
+
+.completed-btn {
+    background: #22c55e;
+    margin-right: 8px;
+}
+
+.completed-btn:hover {
+    background: #16a34a;
+}
+
+.completed {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+.complete-btn {
+    background: #22c55e;
+}
+
+.complete-btn:hover {
+    background: #16a34a;
+}
+
+.complete-btn,
+.delete-btn {
+    margin-left: 8px;
+}
+
+#taskCounter{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #666;
+    font-weight: bold;
+}
+
+.task{
+    animation: showTask 0.3s ease;
+}
+
+@keyframes showTask{
+
+    from{
+        opacity:0;
+        transform:translateY(-10px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.task:hover{
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+
+button{
+    transition:0.2s;
+}
+
+button:active{
+    transform:scale(0.95);
+}
+
+.task{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.task span{
+    flex:1;
+}
+
+.task-date{
+    color:gray;
+    font-size:12px;
+}
